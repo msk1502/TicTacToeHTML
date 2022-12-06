@@ -1,0 +1,48 @@
+    h1, h2, strong, p{
+        text-align: center;
+        color: blue;
+    }
+
+    h1 {
+        font-size:65;
+    }
+
+    h2, strong {
+        font-size: 36;
+    }
+
+    form, input, label, ul {
+        margin-right: auto;
+        margin-left: auto;
+        text-align:center
+    }
+
+    .ticTacToeBoard {
+        border-collapse: collapse;
+        background-color: lightgrey; 
+        align-self: "center";
+        margin-left: auto;
+        margin-right: auto;
+        ;
+    }
+    .X, .Y, .Empty {
+        width: 60px;
+        height:60px;
+        font-size: 35px;
+        text-align: center;
+        border: 3px solid blue;
+ 
+    }
+
+    .X {
+        color:green
+    }
+
+    .Y {
+        color: red;
+    }
+    td {
+        text-align: center;
+    }
+
+
