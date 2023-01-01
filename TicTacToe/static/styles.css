@@ -1,0 +1,64 @@
+    
+/*sets color and aligns text in center for header 1, header 2 and p */
+h1, h2, strong, p, form{
+    text-align: center;
+    color: blue;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1 { 
+    font-size:65; /*sets font size for header1*/
+}
+
+h2, strong {
+    font-size: 36; /*sets font size for header 2*/
+}
+
+/*centers form, input, label and lists*/
+form, input, label, ul {
+    margin-right: auto;
+    margin-left: auto;
+    text-align:center
+}
+
+/*sets style for tic tac toe boad as table*/
+.ticTacToeBoard {
+    border-collapse: collapse; 
+    background-color: lightgrey; 
+    align-self: "center";
+    margin-left: auto;
+    margin-right: auto;
+;
+}
+
+/*sets style for cells in tic tac toe board*/
+TicSquare{
+    width: 60px;
+    height:60px;
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid blue;
+    color: red;
+}
+
+
+/*aligns data cells in table*/
+td {
+    text-align: center;
+}
+.TacBoxButton
+{
+    background: transparent;
+    border: none;
+    width: 60px;
+    height:60px;
+    font-size: 35px;
+    text-align: center;
+    border: 3px solid blue;
+    color: red;
+}
+
+

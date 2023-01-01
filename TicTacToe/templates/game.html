@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    Game
+
+    <!-- diplays whose turn it is.  Player 1 variable is passed through state varialbe-->
+    <br>
+    {% if current == 'X' %}
+        <h2>{{ player1 }} it is your turn!</h2>
+    {% elif current == 'O' %}
+        <h2>{{ player2 }} it is your turn!</h2>
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+
+
+    <form method="post">
+    <!-- each section on the table is a button.  Button sends name to server, and server returns the variables under the values var-->
+    <table class = "ticTacToeBoard">
+        <tr>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="ul" value= {{ ul }} />
+            </td>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="um" value= {{ um }} />
+            </td>
+            <td class="Empty">
+                <input type="submit" class = 'TacBoxButton' name="ur" value= {{ ur }} />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="ml" value= {{ ml }} />
+            </td>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="mm" value= {{ mm }} />
+            </td>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="mr" value= {{ mr }} />
+            </td>
+        </tr>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="bl" value= {{ bl }}/>
+            </td>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="bm" value= {{ bm }} />
+            </td>
+            <td>
+                <input type="submit" class = 'TacBoxButton' name="br" value= {{ br }} />
+            </td>
+    </table>
+</form> 
+
+    <!-- displays outcome of game based upon state of outcome variable-->
+    {% if outcome == 'X' %}
+        <h2>X Wins</h2>
+    {% elif outcome == 'O' %}
+        <h2>O Wins</h2>
+    {% elif outcome == 'Draw' %}
+        <h2>Draw</h2>
+    {% else %}
+        <h2> <br> </h2>
+    {% endif %}
+
+
+    <form method="post">
+        <input type="submit" name="new_game" value= 'New Game' /> <!-- stats new game -->
+        <ul>
+            <li><strong>Links</strong></li>
+            <li><input type="submit" name="link_home" value= 'Home' /></li> <!-- link to home page -->
+            <li><input type="submit" name="link_stats" value= 'Stats' /></li> <!-- link to stats page -->
+        </ul>
+    </form>
+{% endblock %}

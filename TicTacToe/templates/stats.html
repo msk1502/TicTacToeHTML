@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    Stats
+{% endblock %}
+
+{% block body %}
+    
+    <img src="/static/TicTacStats.png" width="450" height="300" class="center"/> <!--loads image of bar graph-->
+    <form method="post">
+        <ul>
+            <li><input type="submit" name="clear_stats" value= 'Clear Stats' /></li> <!--button the clears saved stats-->
+            <li><strong>Links</strong></li>
+            <li><input type="submit" name="link_home" value= 'Home' /></li> <!-- link to home page view-->
+            <li><input type="submit" name="link_game" value= 'Game' /></li> <!-- link to game page view-->
+        </ul>
+    </form>
+{% endblock %}

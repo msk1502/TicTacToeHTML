@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"  /> <!-- import CSS-->
+
+<head style="background-color:black;">
+    <h1>{% block head %}{% endblock %}</h1>
+</head>
+<body style="background-color:black;">
+    <p>{% block body %}{% endblock %}</p>
+</body>
+</html>

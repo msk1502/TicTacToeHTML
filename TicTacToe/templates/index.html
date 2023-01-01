@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    Index
+{% endblock %}
+    test2
+{% block body %}
+    <form method="post">
+        Player1: <input type = "text" name = "player1" /> <!-- form input for player 1 name-->
+        <br>
+        Player2: <input type = "text" name = "player2" /> <!-- form input for player 2 name-->
+        <br>
+        <input type="submit" name="start" value= 'Start' /> <!-- form input to start new game with entered player names-->
+
+        <ul>
+            <li><strong>Links</strong></li>
+            <li><input type="submit" name="link_stats" value= 'Stats' /></li> <!-- link to stats page-->
+        </ul>
+
+    </form>
+{% endblock %}
